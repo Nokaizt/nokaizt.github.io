@@ -9,7 +9,7 @@ Have fun
 <script>
   var websocket = new WebSocket('ws://ctf02.root-me.org/ws');
   websocket.onopen = start;
-  weboscket.onmessage = handleReply;
+  websocket.onmessage = handleReply;
 
   function start(event) {
     websocket.send("flag");
