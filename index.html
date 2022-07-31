@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title></title>
+  <meta charset="utf-8">
+  <title></title>
 </head>
 <body>
 Have fun
+<script>
+  var websocket = new WebSocket('ws://ctf02.root-me.org/ws');
+  websocket.onopen = start;
+  weboscket.onmessage = handleReply;
+
+  function start(event) {
+    websocket.send("flag");
+  }
+
+  function handleReply(event) {
+    console.log(event.data);
+  }
+</script>
 </body>
 </html>
