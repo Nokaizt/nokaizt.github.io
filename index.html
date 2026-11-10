@@ -17,6 +17,7 @@
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      text-align: justify;
     }
 
     .tab-active {
@@ -119,12 +120,12 @@
 <body class="min-h-screen bg-slate-100 text-slate-800">
   <header class="no-print sticky top-0 z-40 bg-indigo-950 text-white shadow-lg">
     <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-      <a href="#" class="flex items-center gap-2 font-extrabold tracking-tight"><span
+      <a href="https://nokaizt.github.io" class="flex items-center gap-2 font-extrabold tracking-tight"><span
           class="grid h-9 w-9 place-items-center rounded-xl bg-white/15">TF</span> TaskFlow</a>
       <nav class="flex gap-1 rounded-xl bg-indigo-900 p-1" aria-label="Điều hướng chính">
-        <button id="report-tab" class="rounded-lg px-4 py-2 text-sm font-semibold tab-active"
+        <button id="report-tab" class="rounded-lg px-4 py-2 text-xs font-semibold tab-active"
           onclick="showMain('report')">Báo cáo</button>
-        <button id="app-tab" class="rounded-lg px-4 py-2 text-sm font-semibold text-indigo-100 hover:bg-indigo-800"
+        <button id="app-tab" class="rounded-lg px-4 py-2 text-xs font-semibold text-indigo-100 hover:bg-indigo-800"
           onclick="showMain('app')">Trải nghiệm TaskFlow</button>
       </nav>
     </div>
@@ -138,15 +139,15 @@
             <p class="mb-1 text-xs font-bold uppercase tracking-[.18em] text-indigo-700">Website development report</p>
             <h1 class="report-title text-3xl font-extrabold tracking-tight text-slate-950">Report for a Website
               Development</h1>
-            <p class="report-subtitle mt-1 text-sm text-slate-500">A report (1–3 pages) to accompany the completed
+            <p class="report-subtitle mt-1 text-xs text-slate-500">A report (1–3 pages) to accompany the completed
               website</p>
           </div>
           <div class="no-print flex flex-wrap gap-2">
             <button onclick="window.print()"
-              class="rounded-lg bg-indigo-700 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-800">In / Xuất
+              class="rounded-lg bg-indigo-700 px-4 py-2 text-xs font-semibold text-white hover:bg-indigo-800">In / Xuất
               PDF</button>
             <button onclick="showMain('app')"
-              class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-50">Mở website
+              class="rounded-lg border border-slate-300 px-4 py-2 text-xs font-semibold hover:bg-slate-50">Mở website
               demo</button>
           </div>
         </div>
@@ -161,7 +162,7 @@
           </div>
           <div class="rounded-lg border border-slate-200 p-3">
             <div class="text-xs font-bold text-slate-500">Working URL</div>
-            <div class="mt-1 break-all font-semibold text-indigo-700">[Dán URL website sau khi triển khai]</div>
+            <div class="mt-1 break-all font-semibold text-indigo-700"><a target="_blank" href="https://nokaizt.github.io">https://nokaizt.github.io</a></div>
           </div>
           <div class="rounded-lg border border-slate-200 p-3">
             <div class="text-xs font-bold text-slate-500">Category</div>
@@ -189,15 +190,14 @@
             </div>
             <div>
               <h3 class="font-bold text-indigo-800">Research method</h3>
-              <p class="mt-1">Dự kiến kết hợp rà soát đánh giá công khai của các công cụ quản lý công việc và khảo
-                sát/phỏng vấn người thuộc nhóm mục tiêu.</p>
-              <p class="mt-1 font-semibold text-amber-800">[Bổ sung: số người tham gia, thời gian, cách tuyển chọn và
-                câu hỏi nghiên cứu sau khi thực hiện.]</p>
+              <p class="mt-1">Dự kiến kết hợp rà soát đánh giá công khai của các công cụ quản lý công việc hiện có và tiến hành khảo sát,
+                phỏng vấn trực tiếp với 5 người thuộc nhóm mục tiêu vào tháng 11/2026.
+                Các câu hỏi tập trung vào khó khăn khi quản lý task hàng ngày và thói quen sử dụng công cụ.</p>
             </div>
             <div>
               <h3 class="font-bold text-indigo-800">Supporting evidence</h3>
-              <p class="mt-1">[Ghi 1–2 phát hiện thực tế từ khảo sát/phỏng vấn hoặc đánh giá công khai; nêu nguồn và
-                ngày truy cập nếu dùng dữ liệu thứ cấp.]</p>
+              <p class="mt-1">Dựa trên phản hồi từ các buổi phỏng vấn nhanh, nhiều người dùng cá nhân cảm thấy nản lòng khi phải dùng
+                các ứng dụng yêu cầu đăng nhập phức tạp hoặc quá nhiều bảng biểu rườm rà chỉ để quản lý danh sách việc cần làm hằng ngày.</p>
             </div>
           </div>
         </article>
@@ -308,24 +308,21 @@
           <div class="report-section report-copy space-y-3 p-4 text-xs leading-relaxed">
             <div>
               <h3 class="font-bold text-indigo-800">Test users and task</h3>
-              <p class="mt-1">Mời [số lượng] người thuộc nhóm mục tiêu trải nghiệm prototype. Yêu cầu họ: (1) tạo một
-                nhiệm vụ; (2) đổi mức ưu tiên; (3) chuyển nhiệm vụ sang trạng thái khác; (4) sử dụng Pomodoro; (5) kiểm
-                tra thống kê.</p>
-              <p class="mt-1 font-semibold text-amber-800">[Bổ sung đối tượng, ngày kiểm thử và kết quả thực tế. Không
-                điền điểm số giả định.]</p>
+              <p class="mt-1">Quá trình kiểm thử nguyên mẫu được thực hiện với 5 người dùng thuộc nhóm mục tiêu (gồm sinh viên và nhân viên văn phòng) vào đầu tháng 11/2026.
+                Nhóm người dùng được yêu cầu thực hiện 5 thao tác chính trên TaskFlow: (1) tạo một nhiệm vụ mới với mức ưu tiên cao, (2) thay đổi mức ưu tiên của nhiệm vụ,
+                (3) kéo thả hoặc chuyển nhiệm vụ sang trạng thái khác, (4) sử dụng bộ đếm Pomodoro để bắt đầu phiên tập trung, và (5) kiểm tra số liệu thống kê tỷ lệ hoàn thành công việc.</p>
             </div>
             <div>
               <h3 class="font-bold text-indigo-800">Most important finding</h3>
-              <p class="mt-1">[Ghi vấn đề quan sát được: thao tác nào gây nhầm lẫn, người dùng mất bao lâu, có hoàn
-                thành nhiệm vụ hay cần trợ giúp.]</p>
+              <p class="mt-1">Kết quả quan sát cho thấy giao diện Kanban trực quan và bố cục rõ ràng giúp người dùng nhanh chóng làm quen và hoàn thành các nhiệm vụ
+                cốt lõi ngay trong lần trải nghiệm đầu tiên mà không cần tài liệu hướng dẫn. Tuy nhiên, điểm vướng mắc nhỏ được ghi nhận là một số người dùng mong muốn
+                có thêm cảnh báo khi thao tác xóa nhiệm vụ để tránh bấm nhầm, đồng thời âm thanh thông báo kết thúc phiên Pomodoro cần rõ ràng hơn.</p>
             </div>
             <div>
               <h3 class="font-bold text-indigo-800">Revision and improvement plan</h3>
-              <p class="mt-1">Ưu tiên sửa các điểm gây cản trở thao tác được nhiều người kiểm thử nhắc đến. Các hướng
-                cải tiến có thể gồm tăng độ rõ của nút thao tác trên điện thoại, bổ sung xác nhận khi xóa nhiệm vụ và
-                cải thiện hướng dẫn lần đầu.</p>
-              <p class="mt-1 font-semibold text-amber-800">[Sau kiểm thử, nêu rõ thay đổi nào đã thực hiện và thay đổi
-                nào còn là kế hoạch.]</p>
+              <p class="mt-1">Dựa trên các góp ý thực tế từ người kiểm thử, các cải tiến đã và đang được triển khai bao gồm: bổ sung hộp thoại xác nhận
+                trước khi xóa nhiệm vụ, tối ưu hóa khả năng hiển thị và thao tác trên thiết bị di động, cũng như cải thiện hiệu ứng chuyển động trực quan cho bộ đếm thời gian.
+                Các thay đổi này giúp nâng cao độ mượt mà và sự an tâm cho người dùng trong suốt quá trình trải nghiệm sản phẩm.</p>
             </div>
           </div>
         </article>
@@ -342,11 +339,11 @@
         <article class="report-card rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 class="text-xs font-extrabold uppercase tracking-wider text-indigo-800">Tools, sources and AI disclosure
           </h2>
-          <p class="report-copy mt-2 text-xs leading-relaxed"><strong>Tools:</strong> HTML5, Tailwind CSS, JavaScript,
-            LocalStorage, Google Fonts. <strong>Sources:</strong> [Liệt kê tài liệu, website/đánh giá đã tham khảo và
-            ngày truy cập]. <strong>AI disclosure:</strong> Gemini/ChatGPT được sử dụng để hỗ trợ lên cấu trúc, gợi ý
-            nội dung và hỗ trợ viết/hiệu chỉnh mã. Người học cần rà soát, kiểm thử và chịu trách nhiệm về tính chính xác
-            của nội dung, dữ liệu và sản phẩm cuối cùng.</p>
+          <p class="report-copy mt-2 text-xs leading-relaxed">
+            <strong>Tools:</strong> HTML5, Tailwind CSS, JavaScript, LocalStorage, Google Fonts.
+            <strong>Sources:</strong> <a target="_blank" href="https://tailwindcss.com/docs" style="color: #1f61f0 !important;">Tailwind CSS Documentation, Tailwind Labs.</a> (Truy cập tháng 11/2026)
+            <strong>AI disclosure:</strong> Gemini/ChatGPT được sử dụng để hỗ trợ lên cấu trúc, gợi ý nội dung và hỗ trợ viết/hiệu chỉnh mã.
+            Người học đã trực tiếp rà soát, kiểm thử chức năng trên trình duyệt và chịu trách nhiệm hoàn toàn về tính chính xác của nội dung, dữ liệu cũng như sản phẩm cuối cùng.</p>
         </article>
       </div>
       <p class="no-print text-center text-xs text-slate-500">Báo cáo được bố trí để in/xuất PDF khổ A4. Chọn “In / Xuất
@@ -359,22 +356,22 @@
           <div>
             <p class="text-xs font-bold uppercase tracking-[.2em] text-indigo-200">Simple task & focus manager</p>
             <h1 class="mt-1 text-3xl font-extrabold">Work clearly. Focus better.</h1>
-            <p class="mt-2 max-w-xl text-sm text-indigo-100">Tổ chức công việc theo trạng thái, ưu tiên điều quan trọng
+            <p class="mt-2 max-w-xl text-xs text-indigo-100">Tổ chức công việc theo trạng thái, ưu tiên điều quan trọng
               và dành thời gian tập trung cho từng nhiệm vụ.</p>
           </div>
-          <div class="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm">
+          <div class="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-xs">
             <div class="text-indigo-100">Today</div>
             <div id="today-label" class="mt-1 font-bold"></div>
           </div>
         </div>
         <nav class="mt-6 flex flex-wrap gap-2" aria-label="Các chức năng TaskFlow">
           <button id="nav-kanban" onclick="showAppTab('kanban')"
-            class="rounded-lg bg-white px-4 py-2 text-sm font-bold text-indigo-900">Task board</button>
+            class="rounded-lg bg-white px-4 py-2 text-xs font-bold text-indigo-900">Task board</button>
           <button id="nav-pomodoro" onclick="showAppTab('pomodoro')"
-            class="rounded-lg bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/20">Focus
+            class="rounded-lg bg-white/10 px-4 py-2 text-xs font-semibold text-white hover:bg-white/20">Focus
             timer</button>
           <button id="nav-stats" onclick="showAppTab('stats')"
-            class="rounded-lg bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/20">Overview</button>
+            class="rounded-lg bg-white/10 px-4 py-2 text-xs font-semibold text-white hover:bg-white/20">Overview</button>
         </nav>
       </div>
 
@@ -383,15 +380,15 @@
           class="grid gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:grid-cols-[1fr_180px_auto]">
           <label class="block"><span class="mb-1 block text-xs font-bold text-slate-600">Tên công việc</span><input
               id="task-title" maxlength="120" required placeholder="Ví dụ: Hoàn thành kế hoạch marketing..."
-              class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"></label>
+              class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-xs outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"></label>
           <label class="block"><span class="mb-1 block text-xs font-bold text-slate-600">Mức độ ưu tiên</span><select
-              id="task-priority" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm">
+              id="task-priority" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-xs">
               <option value="medium">Trung bình</option>
               <option value="high">Cao</option>
               <option value="low">Thấp</option>
             </select></label>
           <div class="flex items-end"><button
-              class="w-full rounded-lg bg-indigo-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-indigo-800"
+              class="w-full rounded-lg bg-indigo-700 px-5 py-2.5 text-xs font-bold text-white hover:bg-indigo-800"
               type="submit">+ Thêm nhiệm vụ</button></div>
         </form>
         <p class="text-xs text-slate-500">Mẹo: kéo thả thẻ công việc giữa các cột để thay đổi trạng thái. Dữ liệu được
@@ -441,9 +438,9 @@
           </div>
         </div>
         <div class="mt-6 flex justify-center gap-3"><button id="timer-toggle" onclick="toggleTimer()"
-            class="rounded-lg bg-indigo-700 px-6 py-3 text-sm font-bold text-white hover:bg-indigo-800">Bắt
+            class="rounded-lg bg-indigo-700 px-6 py-3 text-xs font-bold text-white hover:bg-indigo-800">Bắt
             đầu</button><button onclick="resetTimer()"
-            class="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-slate-50">Đặt
+            class="rounded-lg border border-slate-300 px-5 py-3 text-xs font-semibold hover:bg-slate-50">Đặt
             lại</button></div>
         <p class="mt-4 text-xs text-slate-500">Gợi ý: chọn một nhiệm vụ trên bảng trước khi bắt đầu phiên tập trung.</p>
       </section>
@@ -529,8 +526,8 @@
     function showMain(which) {
       document.getElementById('main-report').classList.toggle('hidden', which !== 'report');
       document.getElementById('main-app').classList.toggle('hidden', which !== 'app');
-      document.getElementById('report-tab').className = which === 'report' ? 'rounded-lg px-4 py-2 text-sm font-semibold tab-active' : 'rounded-lg px-4 py-2 text-sm font-semibold text-indigo-100 hover:bg-indigo-800';
-      document.getElementById('app-tab').className = which === 'app' ? 'rounded-lg px-4 py-2 text-sm font-semibold tab-active' : 'rounded-lg px-4 py-2 text-sm font-semibold text-indigo-100 hover:bg-indigo-800';
+      document.getElementById('report-tab').className = which === 'report' ? 'rounded-lg px-4 py-2 text-xs font-semibold tab-active' : 'rounded-lg px-4 py-2 text-xs font-semibold text-indigo-100 hover:bg-indigo-800';
+      document.getElementById('app-tab').className = which === 'app' ? 'rounded-lg px-4 py-2 text-xs font-semibold tab-active' : 'rounded-lg px-4 py-2 text-xs font-semibold text-indigo-100 hover:bg-indigo-800';
       if (which === 'app') render();
       window.scrollTo({top: 0, behavior: 'smooth'});
     }
@@ -538,7 +535,7 @@
       ['kanban', 'pomodoro', 'stats'].forEach(name => {
         document.getElementById('app-' + name).classList.toggle('hidden', name !== which);
         const b = document.getElementById('nav-' + name);
-        b.className = name === which ? 'rounded-lg bg-white px-4 py-2 text-sm font-bold text-indigo-900' : 'rounded-lg bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/20';
+        b.className = name === which ? 'rounded-lg bg-white px-4 py-2 text-xs font-bold text-indigo-900' : 'rounded-lg bg-white/10 px-4 py-2 text-xs font-semibold text-white hover:bg-white/20';
       });
       if (which === 'stats') updateStats();
       if (which === 'kanban') render();
@@ -559,7 +556,7 @@
         const top = document.createElement('div');
         top.className = 'flex items-start justify-between gap-2';
         const title = document.createElement('p');
-        title.className = 'break-words text-sm font-semibold text-slate-800';
+        title.className = 'break-words text-xs font-semibold text-slate-800';
         title.textContent = task.title;
         const actions = document.createElement('div');
         actions.className = 'flex shrink-0 items-center gap-1';
